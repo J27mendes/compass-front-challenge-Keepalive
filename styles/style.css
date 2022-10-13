@@ -1,0 +1,106 @@
+:root {
+    --color-bg-login: #222222; 
+    --color-text-bg: #E0E0E0;
+    --color-bg-submit: linear-gradient(to right, #FF2D04 , #C13216);
+    --color-white: #ffffff;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-text-bg);
+    font-family: 'Poppins', sans-serif;
+}
+.message {
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+.message-ola{
+    font-size: 3.75rem;
+    margin-bottom: 1rem;
+}
+.message-login{
+    width: 300px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.login {
+    width: 100%;
+    background-color: var(--color-bg-login);
+}
+.form-login {
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    width: 400px;
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+.login-user, .login-password {
+    background-color: var(--color-bg-login);
+    border-radius: 50px;
+    border: solid 1px var(--color-text-bg);
+    width: 340px;
+    height: 60px;
+    margin: 1rem 1rem 1rem 0;
+}
+.login-user::placeholder, .login-password::placeholder{
+    color: var(--color-text-bg);
+    letter-spacing: 1px;
+    padding-left: 1rem;
+}
+.form-label-login {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.login-password {
+    margin-left: 0;
+}
+.login-submit {
+    margin-top: 4rem;
+    background: var(--color-bg-submit) ;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-white);
+    height: 60px;
+    margin-left: 0;
+    font-size: 1rem;
+    width: 340px;
+}
+.login-bust {
+    width: 1rem;
+    display: inline-block;
+}
+.login-padlock {
+    width: 1rem;
+    display: inline-block;
+}
+
+.logo {    
+    width: 100%;
+}
+
+.logo-compass {
+    width: 14rem;   
+    height: 3.5rem; 
+    position: absolute;
+    top: 8%;
+    left: 67%;
+}
+
+.logo-compass-notebook {    
+    width: 50%;
+    z-index: -1;
+}
+
