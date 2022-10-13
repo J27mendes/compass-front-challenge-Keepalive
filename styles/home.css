@@ -1,0 +1,79 @@
+:root {
+    --color-black: #000000;
+    --color-red: #C12D18;
+    --color-white: #ffffff;
+    --color-text-bg-footer: #E0E0E0;
+    --color-bg-home: linear-gradient(to right, #FFFFFF, #F0F0F0);
+    --color-footer: linear-gradient(to right, #33383D, #1C1D20);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nunito', sans-serif;
+}
+.home {
+    background: var(--color-bg-home);    
+}
+.home-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.home-full-date {
+    margin: 0;
+}
+.home-hour {
+    font-size: 6rem;
+    font-family: 'League Spartan', sans-serif;
+}
+.home-date-full-year {
+    font-size: 0.6rem;
+    font-family: 'nunito', sans-serif;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+.home-city {
+    font-family: 'nunito', sans-serif;
+}
+.home-degrees {
+    font-size: 3rem;
+    font-family: 'League Spartan', sans-serif;
+}
+.home-logo-compass {
+    width: 14rem;   
+    height: 3.5rem; 
+}
+
+.home-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    align-items: center;
+    text-align: right;
+    margin-right: 4rem;
+}
+.home-logo-compass-big {
+    width: 25rem;
+    z-index: -1;
+}
+.home-mission {
+    font-family: 'poppins', sans-serif;
+    color: var(--color-red);
+}
+.home-message-mission-portuguese {
+    color: var(--color-black);
+    margin: 0.3rem 0;
+}
+.first-line {
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;    
+}
+.next-line {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
