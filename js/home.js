@@ -1,3 +1,5 @@
+//função para renderizar a hora na tela
+
 let homeHour = document.getElementById("home-hour");
 let homeDateFullYear = document.getElementById("home-date-full-year");
 let secondsRefresh = document.getElementById("time-seconds-refresh");
@@ -13,7 +15,7 @@ function timeUpdating(){
     homeHour.innerHTML = `${doingZero(hour)}:${doingZero(minute)}`;  
 }
 
-
+//função para renderizar a timer no footer da página
 function startTimer(duration, display) {
     let timer = duration, second;
     setInterval(function () {
@@ -46,6 +48,8 @@ function doingZero(time){
     return time < 10 ? `0${time}`: time;
 }
 
+
+//função que coloca a data atual na tela
 setInterval(timeUpdating, 1000);
 timeUpdating();
 
@@ -55,6 +59,37 @@ function dateUpdating(){
 }
 dateUpdating()
 
+//função que abre a nova aba
 continueBrowsing.addEventListener("click", function() {
     window.open("https://noticias.uol.com.br", "_blank");
 });
+
+//função para obter a geolocalização e renderizar na página home
+let city = document.querySelector('.home-city')
+let temperatura = document.querySelector('.home-degrees')
+let iconApi = document.querySelector('.icon')
+const URL_MAIN = 'https://api.weatherapi.com/v1/current.json'
+const API_KEY = '7de2a00351304ef7949185749221410';
+const UNITS = 'metric'
+
+navigator.geolocation.getCurrentPosition(loadUrl)
+
+function loadUrl(pos){
+    let lat = pos.coords.latitude;
+    let long = pos.coords.longitude;
+    
+    let url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${lat},${long}&aqi=no`
+    fetchApi(url);
+    
+}
+
+async function fetchApi(url){
+    let response = await fetch(url)    
+    let {location, current} = await response.json();       
+    let temperature = (current.temp_c).toFixed(0)
+    let icon = `https:${current.condition.icon}`  
+    
+    city.innerText = `${location.name} - ${location.region}`;
+    iconApi.setAttribute("src", icon)
+    temperatura.innerText = `${temperature}ºC`
+}

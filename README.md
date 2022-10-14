@@ -1,6 +1,11 @@
 <h4 align="center"> 
     :construction:  Projeto em construção  :construction:
 </h4>
+<h2>**api de geolocalização**</h2> 
+
+<https://www.weatherapi.com>
+
+
 
 # :hammer: Funcionalidades do projeto
 - `Funcionalidade pagina login`
@@ -13,5 +18,11 @@
 - `Funcionalidade pagina home`
 - : data e horário renderizados na tela.
 - : temporizador decrescente no Footer da página.
-- : 
+- : Lógica de Clima/Tempo tendo como referência a geolocalização do usuário logado na tela home.
+- : Ao clicar em "continuar navegando" abre uma nova aba no browser, sendo essa a página de notícias da UOL.
+ 
+
+  
+
+
 
