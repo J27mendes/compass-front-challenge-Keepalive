@@ -3,7 +3,10 @@
 </h4>
 
 # :hammer: Funcionalidades do projeto
-- `Funcionalidade 1`: - página de login para que caso o usuário seja cadastrado, tenha acesso a página Home.
+- `Funcionalidade pagina login`
+- : imagem se deslocando para dentro do input quando o input é usado.
+- : página de login caso o usuário seja validado, seja redirecionado para a página Home.
+- : salvando os dados do usuario no local storage.
 - `Funcionalidade pagina home`
 - : data e horário renderizados na tela.
 - : temporizador decrescente no Footer da página.
