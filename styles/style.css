@@ -3,7 +3,7 @@
     --color-text-bg: #E0E0E0;
     --color-bg-submit: linear-gradient(to right, #FF2D04 , #C13216);
     --color-white: #ffffff;
-
+    --color-gold: #E9B425;
 }
 
 * {
@@ -59,8 +59,17 @@ body {
 }
 .login-user::placeholder, .login-password::placeholder{
     color: var(--color-text-bg);
+    font-size: 1rem;
     letter-spacing: 1px;
     padding-left: 1rem;
+}
+.border-input {
+    border: solid 1px var(--color-gold);
+}
+.login-user-typing {
+    margin-left: 0;
+    font-size: 1rem;
+    letter-spacing: 0.1rem; 
 }
 .form-label-login {
     font-size: 1.5rem;
@@ -69,8 +78,10 @@ body {
 .form-inputs {
     position: relative;
 }
-.login-password {
+.login-password-typing {
     margin-left: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
 }
 .login-submit {
     margin-top: 4rem;
@@ -108,6 +119,14 @@ body {
     position: relative;
     left: -3.5rem;
     z-index: 10;
+}
+.message-error {
+    display: none;
+    font-family: 'nunito', sans-serif;
+    padding: 2rem 6rem 0 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-gold);
 }
 .logo {    
     width: 100%;

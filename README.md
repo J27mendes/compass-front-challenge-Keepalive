@@ -4,9 +4,12 @@
 
 # :hammer: Funcionalidades do projeto
 - `Funcionalidade pagina login`
-- : imagem se deslocando para dentro do input quando o input é usado.
-- : página de login caso o usuário seja validado, seja redirecionado para a página Home.
+- : icone se deslocando para dentro do input quando o input é usado.
 - : salvando os dados do usuario no local storage.
+- : lógica de validação do formulário.
+- : mensagem caso erro na validação
+- : redirecionamento para a página Home, caso o usuário esteja valido.
+
 - `Funcionalidade pagina home`
 - : data e horário renderizados na tela.
 - : temporizador decrescente no Footer da página.
