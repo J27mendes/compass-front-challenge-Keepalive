@@ -8,8 +8,8 @@ let inputUser = document.querySelector(".login-user");
 let inputPassword = document.querySelector(".login-password");
 let messageError = document.querySelector(".message-error")
 
-let registeredUser = "admin";
-let passwordUser = "admin";
+let registeredUser = "compassjesse";
+let passwordUser = "compass";
 
 let loginHome = [];
 
@@ -25,7 +25,7 @@ submit.addEventListener("click", function(e){
         login.user = user.value;
         login.password = password.value;
         loginHome.push(login);
-        localStorage.setItem("login", JSON.stringify(login));
+        localStorage.setItem("login", JSON.stringify(loginHome));
         user.value = '';
         password.value = '';
         window.location.href = "http://localhost:5500/home.html";
@@ -34,8 +34,8 @@ submit.addEventListener("click", function(e){
       user.value = '';
       password.value = '';
       inputPassword.classList.remove('login-password-typing');
-      user.classList.add('border-input')
-      password.classList.add('border-input')
+      user.classList.add('border-input');
+      password.classList.add('border-input');
     }
 })
 
@@ -46,11 +46,11 @@ user.addEventListener('input', function(){
     loginBust.classList.add('login-bust-inside');
     inputUser.classList.add('login-user-typing');
     
-    messageError.style.display = "none"
+    messageError.style.display = "none";
   } else {
-    loginBust.classList.add('login-bust')     
-    loginBust.classList.remove('login-bust-inside') 
-    inputUser.classList.remove('login-user-typing') 
+    loginBust.classList.add('login-bust');     
+    loginBust.classList.remove('login-bust-inside'); 
+    inputUser.classList.remove('login-user-typing'); 
   }
 });
 
@@ -60,10 +60,33 @@ password.addEventListener('input', function(){
     password.classList.remove('border-input');
     loginPassword.classList.add('login-padlock-inside');  
     inputPassword.classList.add('login-password-typing');
-    messageError.style.display = "none"
+    messageError.style.display = "none";
   } else {
     loginPassword.classList.add('login-padlock'); 
     loginPassword.classList.remove('login-padlock-inside'); 
     inputPassword.classList.remove('login-password-typing');  
   }
 });
+
+//função que preenche os inputs com os dados do localstorage
+function search(){
+  let fill = localStorage.getItem("login")
+  let fillInput = JSON.parse(fill); 
+  let fillUser = fillInput.map(function(login) {
+    return login.user;
+  })
+  let fillPassword = fillInput.map(function(login){
+    return login.password;
+  })
+
+  if(!fill == '' || !fill == null){    
+    inputUser.value = fillUser;
+    inputPassword.value = fillPassword;
+    loginBust.classList.add('login-bust-inside');
+    loginPassword.classList.add('login-padlock-inside'); 
+    inputPassword.classList.add('login-password-typing'); 
+    inputUser.classList.add('login-user-typing');
+  }
+}
+search()
+
