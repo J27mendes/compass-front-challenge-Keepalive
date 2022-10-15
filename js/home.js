@@ -72,7 +72,7 @@ dateUpdating();
 let confirmation = '';
 
 function counterZeros(timer){
-    if(timer === 175){
+    if(timer === 000){
         displayAlert();        
     }            
 }

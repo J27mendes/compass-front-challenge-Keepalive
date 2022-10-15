@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet"  href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/medias.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <title>Compass - Login</title>
@@ -20,14 +21,14 @@
             <label class="form-label-login">Login</label>
             <div class="form-inputs">
                 <input type="text" id="user" class="login-user" placeholder="Usuário" name="User" maxlength="26" required><img src="./images/contact.svg" class="login-bust">
-                <input type="password" id="password" class="login-password" placeholder="Senha" name="Password" maxlength="15" required><img src="./images/padlock.svg" class="login-padlock">
+                <input type="password" id="password" class="login-password" placeholder="Senha" name="Password" maxlength="15" required><img src="./images/padlock.svg" onclick="hidePassword()" class="login-padlock">
             </div>
             <div class="message-error">Ops, usuário ou senha inválidos. Tente novamente!</div>
             <input type="submit" id="submit" class="login-submit" value="Continuar">
         </form>
     </section>  
-    <img src="./images/logo-compasso.png" class="logo-compass" alt="logo-compass"> 
-    <img src="./images/logo-compass-notebook.png" class="logo-compass-notebook" alt="imagem com fundo escuro e um notebook">
+    <img id="logo-compass" src="./images/logo-compasso.png" class="logo-compass" alt="logo-compass"> 
+    <img id="compass-notebook" src="./images/logo-compass-notebook.png" class="logo-compass-notebook" alt="imagem com fundo escuro e um notebook">
     <script src="./js/script.js"></script>
 </body> 
 </html>

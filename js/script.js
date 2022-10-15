@@ -6,10 +6,11 @@ let loginBust = document.querySelector(".login-bust");
 let loginPassword = document.querySelector(".login-padlock");
 let inputUser = document.querySelector(".login-user");
 let inputPassword = document.querySelector(".login-password");
-let messageError = document.querySelector(".message-error")
+let messageError = document.querySelector(".message-error") 
+let insidePadlock = document.querySelector(".login-padlock-inside");
 
-let registeredUser = "compassjesse";
-let passwordUser = "compass";
+let registeredUser = "davilla";
+let passwordUser = "nanica";
 
 let loginHome = [];
 
@@ -89,4 +90,15 @@ function search(){
   }
 }
 search()
+
+//função que mostra o password caso clicado o icone de cadeado
+function hidePassword(){  
+  let input = document.querySelector('#password');
+  if(input.getAttribute('type') == 'password') {
+      input.setAttribute('type', 'text');      
+  } else {
+      input.setAttribute('type', 'password');
+  }
+}
+
 

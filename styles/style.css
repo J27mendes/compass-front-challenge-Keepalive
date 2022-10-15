@@ -83,6 +83,36 @@ body {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
 }
+.login-bust {
+    width: 1rem;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    transition: 1.5s ease-in-out 0.1s;
+    flex-wrap: wrap;
+}
+.login-bust-inside{
+    width: 1rem;
+    position: relative;
+    left: -3.5rem;
+    transition: 1.5s ease-in-out 0.1s;
+    z-index: 10;
+} 
+.login-padlock {
+    width: 1rem;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    transition: 1.5s ease-in-out 0.1s;
+    flex-wrap: wrap;    
+}
+.login-padlock-inside {
+    width: 1rem;
+    position: relative;
+    left: -3.5rem;
+    transition: 1.5s ease-in-out 0.1s;
+    z-index: 10;
+}
 .login-submit {
     margin-top: 4rem;
     background: var(--color-bg-submit) ;
@@ -93,32 +123,6 @@ body {
     margin-left: 0;
     font-size: 1rem;
     width: 340px;
-}
-.login-bust {
-    width: 1rem;
-    display: inline-block;
-    position: relative;
-    left: 0;
-    flex-wrap: wrap;
-}
-.login-bust-inside{
-    width: 1rem;
-    position: relative;
-    left: -3.5rem;
-    z-index: 10;
-} 
-.login-padlock {
-    width: 1rem;
-    display: inline-block;
-    position: relative;
-    left: 0;
-    flex-wrap: wrap;    
-}
-.login-padlock-inside {
-    width: 1rem;
-    position: relative;
-    left: -3.5rem;
-    z-index: 10;
 }
 .message-error {
     display: none;

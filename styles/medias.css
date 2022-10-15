@@ -1,0 +1,43 @@
+@media screen and (max-width: 800px) { 
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .message {
+        margin-left: 1rem;
+        margin-top: 5rem;
+        transition: 2s ease-in-out 0.1s;
+    }
+    .form-login {
+        margin-left: 1rem;
+        margin-top: 5rem;
+        padding-bottom: 2rem;
+        transition: 2s ease-in-out 0.1s;
+    } 
+    #compass-notebook {
+        display: none;
+    }
+    #logo-compass {
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 481px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-login {
+        width: 200px;
+        padding-bottom: 2rem;
+    }
+    #user, #password, #submit {
+        width: 200px;
+        transition: 1.5s ease-in-out 0s;
+    }
+    .message-login{
+        width: 200px;
+        transition: 1.5s ease-in-out 0s;
+    }
+    
+ }
