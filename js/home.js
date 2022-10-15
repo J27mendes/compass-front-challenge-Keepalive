@@ -47,7 +47,7 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    let duration = 60 * 3; // Converter para segundos
+    let duration = 60 * 10; // Converter para segundos
         display = document.querySelector('#time-seconds-refresh'); // selecionando o timer
     startTimer(duration, display); // iniciando o timer
 };
@@ -108,8 +108,12 @@ async function fetchApi(url){
     let {location, current} = await response.json();       
     let temperature = (current.temp_c).toFixed(0);
     let icon = `https:${current.condition.icon}`  
-    
-    city.innerText = `${location.name} - ${location.region}`;
+
+    if(location.region == 'Pernambuco'){
+        city.innerText = `${location.name} - PE`;
+    } else {    
+        city.innerText = `${location.name} - ${location.region}`;
+    }
     iconApi.setAttribute("src", icon);
     temperatura.innerText = `${temperature}ºC`
 }
@@ -117,7 +121,7 @@ async function fetchApi(url){
 //função que exibe um alert e pergunta se o usuário deseja sair realmente da página 
 //se não volta para a pagina se sim ele volta para pagina de login e reseta o localstorage
 logout.addEventListener("click", function(){
-    let resp = confirm("\nDeseja realmente sair clique Ok?\n\n\nse quer continuar clique cancelar para voltar");
+    let resp = confirm("\nse deseja realmente sair clique Ok.\n\n\nse deseja continuar clique em cancelar para voltar");
     if(!resp === false){
         window.location.href = "http://localhost:5500/index.html";
         localStorage.clear();
