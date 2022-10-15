@@ -1,10 +1,11 @@
-<h4 align="center">Keepalive</h4>
-<h2>api de geolocalização utilizada no projeto</h2> 
+# :Keepalive:
+
+### :api de geolocalização utilizada no projeto: 
 
 <https://www.weatherapi.com>
 
 
-# :hammer: Funcionalidades do projeto
+### :hammer: Funcionalidades do projeto
 **`Funcionalidade pagina login`**
 - : icone se deslocando para dentro do input quando o algo é digitado.
 - : salvando os dados do usuario no local storage.
