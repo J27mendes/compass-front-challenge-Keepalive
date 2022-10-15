@@ -34,7 +34,8 @@ function startTimer(duration, display) {
         if (--timer < 0) {
             timer = duration;
         }
-    }, 1000);
+        counterZeros(timer)
+    }, 999);
 }
 
 window.onload = function () {
@@ -42,7 +43,6 @@ window.onload = function () {
         display = document.querySelector('#time-seconds-refresh'); // selecionando o timer
     startTimer(duration, display); // iniciando o timer
 };
-
 
 function doingZero(time){
     return time < 10 ? `0${time}`: time;
@@ -58,6 +58,23 @@ function dateUpdating(){
     homeDateFullYear.innerHTML = `${dayWeek[now.getDay()]}, ${now.getDate()} de ${nameMonth[now.getMonth()]} de ${now.getFullYear()}`;
 }
 dateUpdating()
+
+//função que verifica quando o contador chegar em zero,
+//se o usuário deseja continuar ou sair.
+let confirmation = '';
+
+function counterZeros(timer){
+    if(timer === 000){
+        displayAlert()        
+    }            
+}
+
+function displayAlert(){
+   confirmation = confirm("\nclique OK para continuar na página\n\n\nou clique cancelar para voltar a página de login")
+   if(confirmation === false){
+    window.location.href = "http://localhost:5500/index.html";
+   }
+}
 
 //função que abre a nova aba
 continueBrowsing.addEventListener("click", function() {
@@ -93,3 +110,5 @@ async function fetchApi(url){
     iconApi.setAttribute("src", icon)
     temperatura.innerText = `${temperature}ºC`
 }
+
+
