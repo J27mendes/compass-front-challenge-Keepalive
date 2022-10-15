@@ -1,0 +1,78 @@
+:root {
+    --color-bg-login: #222222; 
+}
+
+@media screen and (max-width: 800px) {
+    .home-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .home-city {
+        display: none;
+    }
+    .home-logo-compass-big {
+        display: none;
+    }
+    .home-mission {
+        font-size: 2rem;
+        margin-top: 0rem;
+    }
+    .home-hour {
+        font-size: 4rem;
+    }
+    .home-body {
+        margin-top: 1rem;
+        transition: 2s ease-in-out 0.1s;
+    }
+    .home-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+    }
+    .home-footer-message {
+        display: none;
+    }
+    .home-footer-bar {
+        display: none;
+    }
+    .home-footer-message-refresh {
+        align-self: flex-start;
+        width: auto;
+    }
+    .time-footer {
+        display: flex;
+    }
+    .time-footer-number-refresh {
+        color: #000000;
+    }
+    .home-footer-message-refresh {
+        color: #000000;
+    }
+    .time-footer-text-seconds {
+        color: #000000;
+    }
+    .logout {
+        display: inline;
+        color: #000000;
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .home-city {
+        display: block;
+        margin-left: 2rem;
+        transition: 3s ease-in-out 0.1s;
+    }
+    .home-logo-compass-big {
+        display: none;
+    }
+    .home-mission {
+        font-size: 1rem;
+        
+    }
+
+}

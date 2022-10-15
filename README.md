@@ -26,8 +26,10 @@
 - : icone de cadeado ao ser clicado alterna entre mostrar ou não a senha.
 
 **`Responsividade`**
-- : página de login para dispositivos até 800px
-- : página de login para dispositivos até 481px
+- : página login para dispositivos até 800px
+- : página login para dispositivos até 481px
+- : página home para dispositivos até 800px 
+- : página home para dispositivos até 481px
  
 
   
