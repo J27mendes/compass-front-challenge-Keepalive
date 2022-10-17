@@ -38,7 +38,9 @@
 }
 .home-city {
     font-family: 'nunito', sans-serif;
-    margin-bottom: 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
 }
 .container {
     display: flex;
@@ -57,10 +59,10 @@
 .home-body {
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 3rem;
     align-items: center;
     text-align: right;
-    margin-right: 4rem;
+    margin-right: 6rem;
 }
 .home-logo-compass-big {
     width: 20rem;
@@ -69,17 +71,23 @@
 .home-mission {
     font-family: 'poppins', sans-serif;
     color: var(--color-red);
+    align-self: center;
 }
 .home-message-mission-portuguese {
     color: var(--color-black);
     margin: 0.3rem 0;
 }
+.home-message-mission-portuguese-big{
+    color: var(--color-black);
+    margin: 0.3rem 0;
+    font-size: 0.72rem;
+}
 .first-line {
     font-weight: bold;
-    font-size: 1.7rem;    
+    font-size: 1.5rem;    
 }
 .next-line {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 1rem;
 }

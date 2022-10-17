@@ -89,13 +89,11 @@ continueBrowsing.addEventListener("click", function() {
     window.open("https://noticias.uol.com.br", "_blank");
 });
 
-
-
 //função para obter a geolocalização e renderizar na página home
 navigator.geolocation.getCurrentPosition(loadUrl);
 
 function loadUrl(pos){
-    let lat = pos.coords.latitude;
+    let lat =  pos.coords.latitude;
     let long = pos.coords.longitude;
     
     let url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${lat},${long}&aqi=no`;
@@ -115,7 +113,7 @@ async function fetchApi(url){
         city.innerText = `${location.name} - ${location.region}`;
     }
     iconApi.setAttribute("src", icon);
-    temperatura.innerText = `${temperature}ºC`
+    temperatura.innerText = `${temperature}º`
 }
 
 //função que exibe um alert e pergunta se o usuário deseja sair realmente da página 
