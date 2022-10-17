@@ -23,7 +23,6 @@
 - : Lógica para manter o Título da página como "Compass - Login" e "Compass - Home".
  
 **`Funcionalidade extra página login`**
-- : preenche o campos de input se o usuário retornar do temporizador.
 - : icone de cadeado ao ser clicado alterna entre mostrar ou não a senha.
 
 **`Funcionalidade extra Responsividade pagina login e home`**

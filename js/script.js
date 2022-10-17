@@ -70,28 +70,6 @@ password.addEventListener('input', function(){
   }
 });
 
-//função que preenche os inputs com os dados do localstorage
-function search(){
-  let fill = localStorage.getItem("login")
-  let fillInput = JSON.parse(fill); 
-  let fillUser = fillInput.map(function(login) {
-    return login.user;
-  })
-  let fillPassword = fillInput.map(function(login){
-    return login.password;
-  })
-
-  if(!fill == '' || !fill == null){    
-    inputUser.value = fillUser;
-    inputPassword.value = fillPassword;
-    loginBust.classList.add('login-bust-inside');
-    loginPassword.classList.add('login-padlock-inside'); 
-    inputPassword.classList.add('login-password-typing'); 
-    inputUser.classList.add('login-user-typing');
-  }
-}
-search()
-
 //função que mostra o password caso clicado o icone de cadeado
 function hidePassword(){  
   let input = document.querySelector('#password');

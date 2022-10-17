@@ -80,6 +80,7 @@ function displayAlert(){
    confirmation = confirm("\nclique OK para continuar na página\n\n\nou clique cancelar para voltar a página de login")
    if(confirmation === false){
     window.location.href = "http://localhost:5500/index.html"; 
+    localStorage.clear();
     }  
 }
 
