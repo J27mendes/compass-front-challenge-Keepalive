@@ -1,4 +1,3 @@
-let formLogin = document.getElementById("form-login");
 let user = document.getElementById("user");
 let password = document.getElementById("password");
 let submit = document.getElementById("submit");
@@ -9,11 +8,12 @@ let inputPassword = document.querySelector(".login-password");
 let messageError = document.querySelector(".message-error") 
 let insidePadlock = document.querySelector(".login-padlock-inside");
 
-let registeredUser = "davilla";
-let passwordUser = "nanica";
+let registeredUser = "userCompass";
+let passwordUser = "passUser";
 
 let loginHome = [];
 
+//função que preenche os dados do formulario e valida ou não a entrada do usuário apartir do submit.
 submit.addEventListener("click", function(e){
     e.preventDefault()
 
@@ -40,6 +40,7 @@ submit.addEventListener("click", function(e){
     }
 })
 
+//funções que fazem a movimentação dos icones para dentro e fora do input
 user.addEventListener('input', function(){
   if(!this.value == ''){ 
     loginBust.classList.remove('login-bust');  
@@ -97,7 +98,7 @@ function hidePassword(){
   if(input.getAttribute('type') == 'password') {
       input.setAttribute('type', 'text');      
   } else {
-      input.setAttribute('type', 'password');
+      input.setAttribute('type', 'password');      
   }
 }
 

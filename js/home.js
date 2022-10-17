@@ -23,6 +23,10 @@ function timeUpdating(){
     homeHour.innerHTML = `${doingZero(hour)}:${doingZero(minute)}`;  
 }
 
+function doingZero(time){
+    return time < 10 ? `0${time}`: time;
+}
+
 //função para renderizar a timer no footer da página
 function startTimer(duration, display) {
     let timer = duration, second;
@@ -43,7 +47,7 @@ function startTimer(duration, display) {
             timer = duration;
         }
         counterZeros(timer)
-    }, 999);
+    }, 1000);
 }
 
 window.onload = function () {
@@ -51,11 +55,6 @@ window.onload = function () {
         display = document.querySelector('#time-seconds-refresh'); // selecionando o timer
     startTimer(duration, display); // iniciando o timer
 };
-
-function doingZero(time){
-    return time < 10 ? `0${time}`: time;
-}
-
 
 //função que coloca a data atual na tela
 setInterval(timeUpdating, 1000);
