@@ -9,7 +9,7 @@ let messageError = document.querySelector(".message-error")
 let insidePadlock = document.querySelector(".login-padlock-inside");
 
 let registeredUser = "userCompass";
-let passwordUser = "passUser";
+let passwordUser = "compass";
 
 let loginHome = [];
 
@@ -74,9 +74,9 @@ password.addEventListener('input', function(){
 function hidePassword(){  
   let input = document.querySelector('#password');
   if(input.getAttribute('type') == 'password') {
-      input.setAttribute('type', 'text');      
+      input.setAttribute('type', 'text');  
   } else {
-      input.setAttribute('type', 'password');      
+      input.setAttribute('type', 'password');    
   }
 }
 
