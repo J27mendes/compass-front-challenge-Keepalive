@@ -30,17 +30,19 @@
 .home-hour {
     font-size: 6rem;
     font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
 }
 .home-date-full-year {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: 'nunito', sans-serif;
     margin-top: -1rem;
 }
 .home-city {
     font-family: 'nunito', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 .container {
     display: flex;
@@ -91,4 +93,6 @@
     font-weight: bold;
     margin-top: 1rem;
 }
+
+
 

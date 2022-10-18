@@ -69,4 +69,7 @@
     text-align: center;
     cursor: pointer;
 }
+.home-footer-message-autentication {
+    display: none;
+}
 

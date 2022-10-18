@@ -116,7 +116,7 @@ body {
     z-index: 10;
 }
 .login-submit {
-    margin-top: 4rem;
+    margin-top: 3rem;
     background: var(--color-bg-submit) ;
     border-radius: 50px;
     font-family: 'Nunito', sans-serif;
@@ -129,10 +129,11 @@ body {
 .message-error {
     display: none;
     font-family: 'nunito', sans-serif;
-    padding: 2rem 6rem 0 2rem;
+    padding: 1rem 6rem 0 2rem;
     text-align: center;
     font-weight: 700;
     color: var(--color-gold);
+    font-size: 1rem;
 }
 .logo {    
     width: 100%;

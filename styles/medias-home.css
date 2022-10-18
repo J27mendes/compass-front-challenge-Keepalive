@@ -16,13 +16,16 @@
     }
     .home-mission {
         font-size: 2rem;
-        margin-top: 0rem;
+        margin-top: 0;
     }
     .home-hour {
         font-size: 4rem;
+        margin-bottom: 1rem;
     }
     .home-body {
-        margin-top: 1rem;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        margin-left: 1rem;
         transition: 2s ease-in-out 0.1s;
     }
     .home-footer {
@@ -30,10 +33,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 6rem;
+        margin-top: 12rem; 
     }
     .home-footer-message {
-        display: none;
+       display: none;
     }
     .home-footer-bar {
         display: none;
@@ -55,9 +58,13 @@
         color: #000000;
     }
     .logout {
-        display: inline;
-        color: #000000;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
+    }
+    .home-footer-message-autentication {
+        margin-top: 2rem;
+        color: var(--color-bg-login);
+        padding: 2rem;
+        display: block;
     }
 }
 
@@ -65,6 +72,7 @@
     .home-city {
         display: block;
         margin-left: 2rem;
+        margin-top: 1rem;
         transition: 3s ease-in-out 0.1s;
     }
     .home-logo-compass-big {
