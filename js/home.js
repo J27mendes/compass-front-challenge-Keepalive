@@ -34,14 +34,6 @@ function startTimer(duration, display) {
         
         second = parseInt(timer % 601, 10);
         
-        if(second < 100 && second >= 10){
-            second = `0${second}`;
-        } else if(second < 10) {
-            second = `00${second}` ;           
-        } else {
-            second = second;
-        }
-
         display.textContent = second;
         if (--timer < 0) {
             timer = duration;
@@ -71,7 +63,7 @@ dateUpdating();
 let confirmation = '';
 
 function counterZeros(timer){
-    if(timer === 000){
+    if(timer === 0){
         displayAlert();        
     }            
 }

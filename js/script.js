@@ -32,9 +32,6 @@ submit.addEventListener("click", function(e){
         window.location.href = "http://localhost:5500/home.html";
     } else {
       messageError.style.display = "block"
-      user.value = '';
-      password.value = '';
-      inputPassword.classList.remove('login-password-typing');
       user.classList.add('border-input');
       password.classList.add('border-input');
     }

@@ -40,9 +40,11 @@
 }
 .home-footer-message-refresh {
     font-size: 0.8rem;
-    margin-left: 4rem;
-    width: 60px;
+    margin-left: 4rem; 
+    width: 70px;
     margin-right: 1rem;
+    line-height: 1rem;    
+    text-align: right;
 }
 .time-footer-number-refresh {
     font-size: 3rem;
@@ -50,8 +52,8 @@
     color: var(--color-white);
 }
 .time-footer-text-seconds {
-    margin-left: 0.8rem;
     font-size: 0.8rem;
+    text-align: center;
 }
 .footer-continue-browsing{
     background: var(--color-white);
